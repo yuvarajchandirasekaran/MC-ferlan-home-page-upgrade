@@ -1,0 +1,479 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #FFFFFF;
+    font-family: @lato-font;
+}
+@lato-font: "Lato", sans-serif;
+@oswald-font: "Oswald", sans-serif;
+@primary-font-color: #FFFFFF;
+@seconday-font-color: #000000;
+img {
+    width: 100%;
+    height: auto;
+}
+.background-img-props {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.btn-props {
+    padding: 15px 0;
+    max-width: 204px;
+    width: 100%;
+    color: @primary-font-color;
+    text-transform: uppercase;
+    background-color: #22AA46;
+    border-radius: 5px;
+    border: none;
+    font: bold 20px/20px @lato-font;
+    cursor: pointer;
+
+    @media screen and (max-width:1024px) {
+        font-size: 14px;
+        max-width: 145px;
+        padding: 10px 0;
+    }
+    @media print{
+        display: none;
+
+    }
+}
+.mcFarlane-lp-page {
+    .container {
+        .banner-section {
+            background-image: url(images/section1/banner-bg.png);
+            .background-img-props;
+            .back-to-main-btn {
+                font: bold 16px/19px @lato-font;
+                color: @seconday-font-color;
+                clip-path: polygon(0 0%, 91% 0%, 80% 100%, 0% 100%);
+                padding: 13px 85px 13px 20px;
+                text-transform: uppercase;
+                display: flex;
+                align-items: center;
+                border: none;
+                cursor: pointer;
+                @media screen and (max-width:768px) {
+                    font-size: 15px;
+                    padding: 13px 65px 13px 20px;
+                }
+                @media screen and (max-width:500px) {
+                    font-size: 13px;
+                }
+                .back-arrow {
+                    vertical-align: middle;
+                    margin-right: 10px;
+                }
+                @media print{
+                    display: none;
+                }
+            }
+            .banner-content {
+                max-width: 1000px;
+                margin: 0 auto;
+                text-align: center;
+                padding: 50px 0 143px;
+                @media screen and (max-width:1024px) {
+                    max-width: 575px;
+                    padding-top: 20px;
+                    padding-bottom: 89px;
+                }
+                @media screen and (max-width:768px) {
+                    max-width: 355px;
+                }
+                @media screen and (max-width:500px) {
+                    max-width: 280px;
+                    padding-bottom: 74px;
+                }
+                .greet-txt {
+                    font: bold 26px/28px @lato-font;
+                    color: @primary-font-color;
+                    text-transform: uppercase;
+                    @media screen and (max-width:1024px) {
+                        font-size: 20px;
+                        line-height: normal;
+                    }
+                    @media screen and (max-width:768px) {
+                        font-size: 16px;
+                    }
+                }
+                .banner-logo {
+                    max-width: 600px;
+                    height: auto;
+                    margin: 0 auto;
+                    padding: 10px 0 16px;
+                    @media screen and (max-width:1024px) {
+                        max-width: 420px;
+                    }
+                    @media screen and (max-width:768px) {
+                        max-width: 315px;
+                    }
+                    @media screen and (max-width:500px) {
+                        max-width: 260px;
+                    }
+                }
+                .text2 {
+                    font: bold 40px/64px @lato-font;
+                    color: @primary-font-color;
+                    @media screen and (max-width:1024px) {
+                        font-size: 34px;
+                        line-height: normal;
+                    }
+                    @media screen and (max-width:768px) {
+                        font-size: 28px;
+                    }
+                    @media screen and (max-width:768px) {
+                        font-size: 22px;
+                    }
+                    strong {
+                        color: #94FDF9;
+                    }
+                }
+                .action-btns {
+                    display: flex;
+                    margin: 0 -15px;
+                    justify-content: center;
+                    margin-top: 40px;
+                    @media screen and (max-width:768px) {
+                        margin-top: 30px;
+                    }
+                    button {
+                        .btn-props;
+                        margin: 0 15px;
+                    }
+                    .download-btn {
+                        background-color: @primary-font-color;
+                        color: #22AA46;
+                        border: 3px solid #22AA46;
+                    }
+                }
+            }
+        }
+        .digital-note-section {
+            background-image: url(images/section2/launch-note-bg.jpg);
+            .background-img-props;
+            .note-content {
+                max-width: 920px;
+                margin: 0 auto;
+                padding: 135px 0 80px;
+                @media screen and (max-width:1024px) {
+                    max-width: 750px;
+                    padding-top: 97px;
+                    padding: 97px 30px 80px;
+                }
+                @media screen and (max-width:768px) {
+                    max-width: 698px;
+                    padding-top: 90px;
+                    padding-bottom: 60px;
+                }
+                @media screen and (max-width:500px) {
+                    max-width: 425px;
+                    padding-top: 64px;
+                    padding-bottom: 50px;
+                }
+                .logo-without-name {
+                    max-width: 80px;
+                    margin: 0 auto;
+                    @media screen and (max-width:1024px) {
+                        max-width: 60px;
+                    }
+                    @media screen and (max-width:768px) {
+                        max-width: 50px;
+                    }
+                }
+                .text-content {
+                    .note-heading {
+                        font: bold 48px/50px @oswald-font;
+                        color: @seconday-font-color;
+                        text-align: center;
+                        padding: 10px 0 30px;
+                        @media screen and (max-width:1024px) {
+                            font-size: 38px;
+                            padding: 3px 0 15px;
+                        }
+                        @media screen and (max-width:768px) {
+                            font-size: 28px;
+                            line-height: 34px;
+                        }
+                        @media screen and (max-width:500px) {
+                            padding: 3px 35px 15px;
+                        }
+                    }
+                    .note {
+                        font: bold 22px/32px @lato-font;
+                        color: @seconday-font-color;
+                        @media screen and (max-width:1024px) {
+                            font-size: 18px;
+                            line-height: 22px;
+                        }
+                        @media screen and (max-width:768px) {
+                            font-size: 16px;
+                        }
+                        .highlighted-txt {
+                            color: #074F73;
+                        }
+                    }
+                }
+            }
+        }
+        .three-card-ad-section {
+            .card {
+                .card-content {
+                    max-width: 1250px;
+                    margin: 0 auto;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    padding: 40px 40px;
+                    @media screen and (max-width:1024px) {
+                        max-width: 890px;
+                    }
+                    @media screen and (max-width:768px) {
+                        max-width: 645px;
+                    }
+                    @media screen and (max-width:500px) {
+                        flex-wrap: wrap;
+                        padding: 30px 0 38px;
+                        align-items: flex-start;
+                        flex-direction: column-reverse;
+                    }
+                    &>div {
+                        max-width: 55%;
+                        @media screen and (max-width:500px) {
+                            max-width: 89%;
+                            margin: 0px auto;
+                        }
+                    }
+                    .card-txt {
+                        .card-heading {
+                            font: bold 48px/normal @oswald-font;
+                            background: linear-gradient(to right, #277D69 , #116378);
+                            -webkit-text-fill-color: transparent; 
+                            -webkit-background-clip: text; 
+                            @media screen and (max-width:1024px) {
+                                font-size: 35px;
+                            }
+                            @media screen and (max-width:768px) {
+                                font-size: 26px;
+                                line-height: 30px;
+                            }
+                        }
+                        .para-txt {
+                            font: bold 22px/28px @lato-font;
+                            color: @seconday-font-color;
+                            margin: 19px 0 30px;
+                            @media screen and (max-width:1024px) {
+                                font-size: 18px;
+                            }
+                            @media screen and (max-width:768px) {
+                                font-size: 16px;
+                                line-height: 22px;
+                            }
+                        }
+                        .view-tutorial-btn {
+                            .btn-props;
+                            background-color: #0E97D9;
+                        }
+                    }
+                    .represent-img {
+                        max-width: 560px;
+                        @media screen and (max-width:1024px) {
+                            max-width: 380px;
+                        }
+                        @media screen and (max-width:768px) {
+                            max-width: 288px;
+                        }
+                        @media screen and (max-width:500px) {
+                            margin-bottom: 30px;
+                        }
+                    }
+                }
+            }
+            .card.one {
+                background-image: url(images/section3/banner1-bg.jpg);
+                .background-img-props;
+            }
+            .card.two {
+                background-image: url(images/section3/banner2-bg.jpg);
+                .background-img-props;
+                .card-content {
+                    flex-direction: row-reverse;
+                    &>div{
+                        max-width: 48%;
+                        @media screen and (max-width:500px) {
+                            max-width: 89%;
+                        }
+                    }
+                    @media screen and (max-width:500px) {
+                        flex-direction: column-reverse;
+                    }
+                    .card-txt {
+                        .card-heading {
+                            background: linear-gradient(to right, #3FC9A8 ,#1CA2C4);
+                            -webkit-text-fill-color: transparent; 
+                            -webkit-background-clip: text; 
+                        }
+                        .para-txt {
+                            color: @primary-font-color;
+                        }
+                    }
+                }
+            }
+            .card.three {
+                background-image: url(images/section3/banner3-bg.jpg);
+                .background-img-props;
+                margin: 20px;
+                @media screen and (max-width:500px) {
+                    background-image: url(images/section3/card3-mobile-bg.jpg);
+                }
+                .card-content {
+                    min-height: 360px;
+                    @media screen and (max-width:1024px) {
+                        min-height: 250px;
+                    }
+                    @media screen and (max-width:768px) {
+                        min-height: 184px;
+                    }
+                    @media screen and (max-width:500px) {
+                        min-height: 324px;
+                        display: block;
+                    }
+                }
+            }
+        }
+        .multi-year-roadmap {
+            background-image: url(images/section4/multi-roadmap-bg.jpg);
+            .background-img-props;
+            margin: 20px;
+            .road-map-content {
+                max-width: 1030px;
+                margin: 0 auto;
+                padding: 59px 0 72px;
+                text-align: center;
+                @media screen and (max-width:1150px){
+                    padding: 59px 50px 72px;
+                }
+                @media screen and (max-width:1024px) {
+                    max-width: 740px;
+                }
+                @media screen and (max-width:768px) {
+                    max-width: 524px;
+                    padding: 59px 30px 72px;
+                }
+                @media screen and (max-width:400px) {
+                    padding: 59px 0px 72px;
+                }
+
+                .heading {
+                    font: bold 48px/50px @oswald-font;
+                    background: linear-gradient(to right, #3FC9A8 ,#1CA2C4);
+                    -webkit-text-fill-color: transparent; 
+                    -webkit-background-clip: text; 
+                    @media screen and (max-width:1024px) {
+                        font-size: 35px;
+                    }
+                    @media screen and (max-width:768px) {
+                        font-size: 26px;
+                        line-height: 30px;
+                    }
+                }
+                .para-txt {
+                    font: bold 22px/28px @lato-font;
+                    color: @primary-font-color;
+                    max-width: 680px;
+                    margin: 25px auto 40px;
+                    @media screen and (max-width:1024px) {
+                        font-size: 18px;
+                        max-width: 528px;
+                    }
+                    @media screen and (max-width:768px) {
+                        font-size: 16px;
+                        line-height: 22px;
+                        max-width: 462px;
+                    }
+                    @media screen and (max-width:500px) {
+                        max-width: 260px;
+                    }
+                }
+                .features {
+                    display: flex;
+                    justify-content: space-between;
+                    @media screen and (max-width:500px) {
+                        flex-wrap: wrap;
+                        justify-content: center;
+                    }
+                    .feature {
+                        max-width: 150px;
+                        text-align: center;
+                        @media screen and (max-width:500px) {
+                            margin: 15px 10px;
+                        }
+                        .img {
+                            max-width: 80px;
+                            height: auto;
+                            margin: 0 auto;
+                            @media screen and (max-width:1024px) {
+                                max-width: 56px;
+                            }
+                            @media screen and (max-width:768px) {
+                                max-width: 41px;
+                            }
+                        }
+                        .feature-name {
+                            font: bold 20px/26px @oswald-font;
+                            color: @primary-font-color;
+                            text-transform: uppercase;
+                            margin-top: 10px;
+                            @media screen and (max-width:1024px) {
+                                font-size: 14px;
+                                line-height: normal;
+                            }
+                            @media screen and (max-width:768px) {
+                                font-size: 13px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .get-start {
+            padding: 60px 0 100px;
+            text-align: center;
+            max-width: 870px;
+            margin: 0 auto;
+            @media screen and (max-width:1024px) {
+                padding: 40px 0 100px;
+            }
+            @media screen and (max-width:768px) {
+                padding: 30px 0 80px;
+            }
+            @media screen and (max-width:500px) {
+                padding: 20px 0 80px;
+                max-width: 340px;
+            }
+            .heading {
+                font: bold 48px/58px @oswald-font;
+                color: @seconday-font-color;
+                @media screen and (max-width:1024px) {
+                    font-size: 38px;
+                    line-height: normal;
+                }
+                @media screen and (max-width:768px) {
+                    font-size: 28px;
+                    line-height: normal;
+                }
+            }
+            .get-start-btn {
+                .btn-props;
+                margin-top: 30px;
+            }
+        }
+    }
+}
+.print-btn{
+    .btn-props;
+}
